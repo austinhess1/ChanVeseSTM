@@ -1,0 +1,2 @@
+This contains an alternative version of the method script that includes outputs for the initial level set and an Otsu binary mask of the image.
+This was used to generate figure 4 in the associated publication.
