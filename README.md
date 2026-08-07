@@ -1,0 +1,3 @@
+This is a python script designed to rapidly segment Scanning Tunnelling Microscopy (STM) images to study the phenomenon known as vacancy diffusion. Vacancy diffusion is a phenomenon in which material underneath the scanning tip gets progressively removed as scans progress.
+This script utilizes the Chan-Vese image segmentation model, which enables Boolean masking of images that include implicit or poorly-defined edge features.
+This GitHub repository serves as supplementary material to the publication titled "Automated Area Extraction of Vacancy Islands on Scanning Tunneling Microscopy Data Using Image Segmentation" by Austin Hess and Paula Coelho at the University of North Florida's Physics and Astronomy department.
