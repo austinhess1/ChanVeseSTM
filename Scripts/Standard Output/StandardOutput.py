@@ -134,15 +134,15 @@ if __name__ == "__main__":
     
     scanList  = FileDistribution(workerCount, scanList)
     processes = []
-    spellCastStart = time.time()
+    processStart = time.time()
     for l in range(workerCount):
         time.sleep(5)
-        wizard = Process(target=LoopScan, args=(l, sublists,lock))
-        wizard.start()
+        worker = Process(target=LoopScan, args=(l, sublists,lock))
+        worker.start()
 
-    wizard.join()
-    spellCastEnd = time.time()
-    executionTime = spellCastEnd - spellCastStart
+    worker.join()
+    processEnd = time.time()
+    executionTime = processEnd - processStart
     global totalScans
     totalScans = workerCount * sublistLength
     avgTime = executionTime/totalScans
